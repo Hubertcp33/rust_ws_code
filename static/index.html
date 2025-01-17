@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 设置字符编码为UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- 设置视口宽度为设备宽度，初始缩放比例为1.0 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Chat</title>
+    <style>
+        /* 设置log的宽度为100%，高度为200px，边框为1px的灰色实线，垂直滚动条 */
+        #log {
+            width: 100%;
+            height: 200px;
+            border: 1px solid #ccc;
+            overflow-y: scroll;
+        }
+        /* 设置input的宽度为70%，内边距为5px */
+        #input {
+            width: 70%;
+            padding: 5px;
+        }
+        /* 设置btn的内边距为5px 10px */
+        #btn {
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>WebSocket Chat</h1>
+    <!-- 设置log为只读的文本域 -->
+    <div>
+        <textarea id="log" readonly></textarea>
+    </div>
+    <!-- 设置input为文本输入框，btn为发送按钮 -->
+    <div>
+        <input type="text" id="input" placeholder="Type a message...">
+        <button id="btn">Send</button>
+    </div>
+    <!-- 引入main.js文件 -->
+    <script src="./main.js"></script>
+</body>
+</html>
